@@ -36,7 +36,8 @@ Partial Class Form1
         Me.PositionTB = New System.Windows.Forms.TextBox()
         Me.NumberTB = New System.Windows.Forms.TextBox()
         Me.AgeTB = New System.Windows.Forms.TextBox()
-        Me.ContractTB = New System.Windows.Forms.TextBox()
+        Me.WeightHeaghtTB = New System.Windows.Forms.TextBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -55,8 +56,8 @@ Partial Class Form1
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.SaveToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(46, 24)
-        Me.FileToolStripMenuItem.Text = "File"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(116, 24)
+        Me.FileToolStripMenuItem.Text = "Raiders Player"
         '
         'NewToolStripMenuItem
         '
@@ -72,16 +73,17 @@ Partial Class Form1
         '
         'PictureBox1
         '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.PictureBox1.Location = New System.Drawing.Point(400, 115)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(230, 266)
+        Me.PictureBox1.Size = New System.Drawing.Size(245, 266)
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(150, 173)
+        Me.Label1.Location = New System.Drawing.Point(142, 173)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(49, 20)
         Me.Label1.TabIndex = 2
@@ -90,7 +92,7 @@ Partial Class Form1
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(142, 206)
+        Me.Label2.Location = New System.Drawing.Point(136, 206)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(61, 20)
         Me.Label2.TabIndex = 3
@@ -99,7 +101,7 @@ Partial Class Form1
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(140, 239)
+        Me.Label3.Location = New System.Drawing.Point(135, 239)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(63, 20)
         Me.Label3.TabIndex = 4
@@ -108,7 +110,7 @@ Partial Class Form1
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(150, 272)
+        Me.Label4.Location = New System.Drawing.Point(148, 272)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(36, 20)
         Me.Label4.TabIndex = 5
@@ -119,9 +121,9 @@ Partial Class Form1
         Me.Label5.AutoSize = True
         Me.Label5.Location = New System.Drawing.Point(138, 305)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(65, 20)
+        Me.Label5.Size = New System.Drawing.Size(56, 20)
         Me.Label5.TabIndex = 6
-        Me.Label5.Text = "Contract"
+        Me.Label5.Text = "WT/HT"
         '
         'NameTB
         '
@@ -151,19 +153,23 @@ Partial Class Form1
         Me.AgeTB.Size = New System.Drawing.Size(125, 27)
         Me.AgeTB.TabIndex = 10
         '
-        'ContractTB
+        'WeightHeaghtTB
         '
-        Me.ContractTB.Location = New System.Drawing.Point(209, 302)
-        Me.ContractTB.Name = "ContractTB"
-        Me.ContractTB.Size = New System.Drawing.Size(125, 27)
-        Me.ContractTB.TabIndex = 11
+        Me.WeightHeaghtTB.Location = New System.Drawing.Point(209, 302)
+        Me.WeightHeaghtTB.Name = "WeightHeaghtTB"
+        Me.WeightHeaghtTB.Size = New System.Drawing.Size(125, 27)
+        Me.WeightHeaghtTB.TabIndex = 11
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.ContractTB)
+        Me.Controls.Add(Me.WeightHeaghtTB)
         Me.Controls.Add(Me.AgeTB)
         Me.Controls.Add(Me.NumberTB)
         Me.Controls.Add(Me.PositionTB)
@@ -200,5 +206,6 @@ Partial Class Form1
     Friend WithEvents PositionTB As TextBox
     Friend WithEvents NumberTB As TextBox
     Friend WithEvents AgeTB As TextBox
-    Friend WithEvents ContractTB As TextBox
+    Friend WithEvents WeightHeaghtTB As TextBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
