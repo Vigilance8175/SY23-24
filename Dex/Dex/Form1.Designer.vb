@@ -32,11 +32,11 @@ Partial Class Form1
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.NameTB = New System.Windows.Forms.TextBox()
-        Me.PositionTB = New System.Windows.Forms.TextBox()
-        Me.NumberTB = New System.Windows.Forms.TextBox()
-        Me.AgeTB = New System.Windows.Forms.TextBox()
-        Me.WeightHeaghtTB = New System.Windows.Forms.TextBox()
+        Me.Field1 = New System.Windows.Forms.TextBox()
+        Me.Field2 = New System.Windows.Forms.TextBox()
+        Me.Field3 = New System.Windows.Forms.TextBox()
+        Me.Field4 = New System.Windows.Forms.TextBox()
+        Me.Field5 = New System.Windows.Forms.TextBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -77,6 +77,7 @@ Partial Class Form1
         Me.PictureBox1.Location = New System.Drawing.Point(400, 115)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(245, 266)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 1
         Me.PictureBox1.TabStop = False
         '
@@ -125,40 +126,40 @@ Partial Class Form1
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "WT/HT"
         '
-        'NameTB
+        'Field1
         '
-        Me.NameTB.Location = New System.Drawing.Point(209, 170)
-        Me.NameTB.Name = "NameTB"
-        Me.NameTB.Size = New System.Drawing.Size(125, 27)
-        Me.NameTB.TabIndex = 7
+        Me.Field1.Location = New System.Drawing.Point(209, 170)
+        Me.Field1.Name = "Field1"
+        Me.Field1.Size = New System.Drawing.Size(125, 27)
+        Me.Field1.TabIndex = 7
         '
-        'PositionTB
+        'Field2
         '
-        Me.PositionTB.Location = New System.Drawing.Point(209, 203)
-        Me.PositionTB.Name = "PositionTB"
-        Me.PositionTB.Size = New System.Drawing.Size(125, 27)
-        Me.PositionTB.TabIndex = 8
+        Me.Field2.Location = New System.Drawing.Point(209, 203)
+        Me.Field2.Name = "Field2"
+        Me.Field2.Size = New System.Drawing.Size(125, 27)
+        Me.Field2.TabIndex = 8
         '
-        'NumberTB
+        'Field3
         '
-        Me.NumberTB.Location = New System.Drawing.Point(209, 236)
-        Me.NumberTB.Name = "NumberTB"
-        Me.NumberTB.Size = New System.Drawing.Size(125, 27)
-        Me.NumberTB.TabIndex = 9
+        Me.Field3.Location = New System.Drawing.Point(209, 236)
+        Me.Field3.Name = "Field3"
+        Me.Field3.Size = New System.Drawing.Size(125, 27)
+        Me.Field3.TabIndex = 9
         '
-        'AgeTB
+        'Field4
         '
-        Me.AgeTB.Location = New System.Drawing.Point(209, 269)
-        Me.AgeTB.Name = "AgeTB"
-        Me.AgeTB.Size = New System.Drawing.Size(125, 27)
-        Me.AgeTB.TabIndex = 10
+        Me.Field4.Location = New System.Drawing.Point(209, 269)
+        Me.Field4.Name = "Field4"
+        Me.Field4.Size = New System.Drawing.Size(125, 27)
+        Me.Field4.TabIndex = 10
         '
-        'WeightHeaghtTB
+        'Field5
         '
-        Me.WeightHeaghtTB.Location = New System.Drawing.Point(209, 302)
-        Me.WeightHeaghtTB.Name = "WeightHeaghtTB"
-        Me.WeightHeaghtTB.Size = New System.Drawing.Size(125, 27)
-        Me.WeightHeaghtTB.TabIndex = 11
+        Me.Field5.Location = New System.Drawing.Point(209, 302)
+        Me.Field5.Name = "Field5"
+        Me.Field5.Size = New System.Drawing.Size(125, 27)
+        Me.Field5.TabIndex = 11
         '
         'OpenFileDialog1
         '
@@ -169,11 +170,11 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.WeightHeaghtTB)
-        Me.Controls.Add(Me.AgeTB)
-        Me.Controls.Add(Me.NumberTB)
-        Me.Controls.Add(Me.PositionTB)
-        Me.Controls.Add(Me.NameTB)
+        Me.Controls.Add(Me.Field5)
+        Me.Controls.Add(Me.Field4)
+        Me.Controls.Add(Me.Field3)
+        Me.Controls.Add(Me.Field2)
+        Me.Controls.Add(Me.Field1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -202,10 +203,10 @@ Partial Class Form1
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents NameTB As TextBox
-    Friend WithEvents PositionTB As TextBox
-    Friend WithEvents NumberTB As TextBox
-    Friend WithEvents AgeTB As TextBox
-    Friend WithEvents WeightHeaghtTB As TextBox
+    Friend WithEvents Field1 As TextBox
+    Friend WithEvents Field2 As TextBox
+    Friend WithEvents Field3 As TextBox
+    Friend WithEvents Field4 As TextBox
+    Friend WithEvents Field5 As TextBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class

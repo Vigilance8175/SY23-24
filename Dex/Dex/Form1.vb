@@ -3,24 +3,24 @@
 Public Class Form1
     Dim records(50) As String
     Private Sub NewToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles NewToolStripMenuItem.Click
-        NameTB.Text = ""
-        PositionTB.Text = ""
-        NumberTB.Text = ""
-        AgeTB.Text = ""
-        WeightHeaghtTB.Text = ""
+        Field1.Text = ""
+        Field2.Text = ""
+        Field3.Text = ""
+        Field4.Text = ""
+        Field5.Text = ""
         PictureBox1.Image = Nothing
     End Sub
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
         Dim outFile As New IO.StreamWriter("data.txt")
-        outFile.Write(NameTB.Text)
+        outFile.Write(Field1.Text)
         outFile.Write("|")
-        outFile.Write(PositionTB.Text)
+        outFile.Write(Field2.Text)
         outFile.Write("|")
-        outFile.Write(NumberTB.Text)
+        outFile.Write(Field3.Text)
         outFile.Write("|")
-        outFile.Write(AgeTB.Text)
+        outFile.Write(Field4.Text)
         outFile.Write("|")
-        outFile.Write(WeightHeaghtTB.Text)
+        outFile.Write(Field5.Text)
         outFile.Write("|")
         outFile.WriteLine(PictureBox1.ImageLocation)
         outFile.Close()
@@ -36,8 +36,20 @@ Public Class Form1
         If IO.File.Exists("data.txt") Then
             Dim inFile As New IO.StreamReader("data.txt")
             records(0) = inFile.ReadLine
-            records(1) = inFile.ReadLine
             inFile.Close()
+            showrecord(0)
+        End If
+    End Sub
+    Public Sub showrecord(index As Integer)
+        Dim fields() As String
+        fields = records(index).Split("|")
+        Field1.Text = fields(0)
+        Field2.Text = fields(1)
+        Field3.Text = fields(2)
+        Field4.Text = fields(3)
+        Field5.Text = fields(4)
+        If File.Exists(fields(5)) Then
+            PictureBox1.Load(fields(5))
         End If
     End Sub
 End Class
