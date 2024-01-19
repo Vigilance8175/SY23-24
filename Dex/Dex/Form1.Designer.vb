@@ -66,13 +66,13 @@ Partial Class Form1
         'NewToolStripMenuItem
         '
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(123, 26)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.NewToolStripMenuItem.Text = "New"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(123, 26)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'PictureBox1
@@ -134,35 +134,35 @@ Partial Class Form1
         '
         Me.Field1.Location = New System.Drawing.Point(209, 170)
         Me.Field1.Name = "Field1"
-        Me.Field1.Size = New System.Drawing.Size(125, 27)
+        Me.Field1.Size = New System.Drawing.Size(147, 27)
         Me.Field1.TabIndex = 7
         '
         'Field2
         '
         Me.Field2.Location = New System.Drawing.Point(209, 203)
         Me.Field2.Name = "Field2"
-        Me.Field2.Size = New System.Drawing.Size(125, 27)
+        Me.Field2.Size = New System.Drawing.Size(147, 27)
         Me.Field2.TabIndex = 8
         '
         'Field3
         '
         Me.Field3.Location = New System.Drawing.Point(209, 236)
         Me.Field3.Name = "Field3"
-        Me.Field3.Size = New System.Drawing.Size(125, 27)
+        Me.Field3.Size = New System.Drawing.Size(147, 27)
         Me.Field3.TabIndex = 9
         '
         'Field4
         '
         Me.Field4.Location = New System.Drawing.Point(209, 269)
         Me.Field4.Name = "Field4"
-        Me.Field4.Size = New System.Drawing.Size(125, 27)
+        Me.Field4.Size = New System.Drawing.Size(147, 27)
         Me.Field4.TabIndex = 10
         '
         'Field5
         '
         Me.Field5.Location = New System.Drawing.Point(209, 302)
         Me.Field5.Name = "Field5"
-        Me.Field5.Size = New System.Drawing.Size(125, 27)
+        Me.Field5.Size = New System.Drawing.Size(147, 27)
         Me.Field5.TabIndex = 11
         '
         'OpenFileDialog1

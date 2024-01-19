@@ -1,6 +1,5 @@
 ﻿Imports System.IO
 Imports System.Web
-
 Public Class Form1
     Dim records(50) As String
     Dim count As Integer
@@ -12,16 +11,15 @@ Public Class Form1
         Field4.Text = ""
         Field5.Text = ""
         PictureBox1.Image = Nothing
+        current = count
+        count = count + 1
     End Sub
-
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         OpenFileDialog1.ShowDialog()
     End Sub
-
     Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
         PictureBox1.Load(OpenFileDialog1.FileName)
     End Sub
-
     Private Sub SaveToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SaveToolStripMenuItem.Click
         SaveToFile()
     End Sub
@@ -47,7 +45,6 @@ Public Class Form1
         Next
         outFile.Close()
     End Sub
-
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If IO.File.Exists("data.txt") Then
             Dim inFile As New StreamReader("data.txt")
@@ -74,13 +71,11 @@ Public Class Form1
             End If
         End If
     End Sub
-
     Private Sub FirstButton_Click(sender As Object, e As EventArgs) Handles FirstButton.Click
         SaveToFile()
         current = 0
         ShowRecord(current)
     End Sub
-
     Private Sub PrevButton_Click(sender As Object, e As EventArgs) Handles PrevButton.Click
         SaveToFile()
         If current > 0 Then
@@ -88,7 +83,6 @@ Public Class Form1
         End If
         ShowRecord(current)
     End Sub
-
     Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
         SaveToFile()
         If current < count - 1 Then
@@ -96,7 +90,6 @@ Public Class Form1
         End If
         ShowRecord(current)
     End Sub
-
     Private Sub LastButton_Click(sender As Object, e As EventArgs) Handles LastButton.Click
         SaveToFile()
         If count > 0 Then
