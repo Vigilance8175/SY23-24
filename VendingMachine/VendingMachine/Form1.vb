@@ -46,4 +46,16 @@ Public Class Form1
             NickelPictureBox.Visible = False
         End If
     End Sub
+
+    Private Sub BuyB_Click(sender As Object, e As EventArgs) Handles BuyB.Click
+        Select Case IDTextbox.Text
+            Case ProductControl1.ProductID
+                ProductControl1.Buy()
+            Case 2
+
+            Case Else
+
+        End Select
+        ProductControl1.Buy()
+    End Sub
 End Class
