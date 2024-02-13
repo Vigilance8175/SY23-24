@@ -29,6 +29,17 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.CoinReturnB = New System.Windows.Forms.Button()
+        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.QuarterPictureBox = New System.Windows.Forms.PictureBox()
+        Me.DimePictureBox = New System.Windows.Forms.PictureBox()
+        Me.NickelPictureBox = New System.Windows.Forms.PictureBox()
+        Me.DollarPictureBox = New System.Windows.Forms.PictureBox()
+        Me.BuyB = New System.Windows.Forms.Button()
+        Me.IDTextbox = New System.Windows.Forms.TextBox()
+        Me.ProductPB = New System.Windows.Forms.PictureBox()
         Me.ProductControl16 = New VendingMachine.ProductControl()
         Me.ProductControl15 = New VendingMachine.ProductControl()
         Me.ProductControl14 = New VendingMachine.ProductControl()
@@ -45,16 +56,6 @@ Partial Class Form1
         Me.ProductControl3 = New VendingMachine.ProductControl()
         Me.ProductControl2 = New VendingMachine.ProductControl()
         Me.ProductControl1 = New VendingMachine.ProductControl()
-        Me.PictureBox4 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox3 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.QuarterPictureBox = New System.Windows.Forms.PictureBox()
-        Me.DimePictureBox = New System.Windows.Forms.PictureBox()
-        Me.NickelPictureBox = New System.Windows.Forms.PictureBox()
-        Me.DollarPictureBox = New System.Windows.Forms.PictureBox()
-        Me.BuyB = New System.Windows.Forms.Button()
-        Me.IDTextbox = New System.Windows.Forms.TextBox()
         CType(Me.PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -63,6 +64,7 @@ Partial Class Form1
         CType(Me.DimePictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NickelPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DollarPictureBox, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ProductPB, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'DollarB
@@ -127,6 +129,115 @@ Partial Class Form1
         Me.CoinReturnB.TabIndex = 10
         Me.CoinReturnB.Text = "Coin Return"
         Me.CoinReturnB.UseVisualStyleBackColor = True
+        '
+        'PictureBox4
+        '
+        Me.PictureBox4.Image = Global.VendingMachine.My.Resources.Resources.Nickel
+        Me.PictureBox4.Location = New System.Drawing.Point(12, 247)
+        Me.PictureBox4.Name = "PictureBox4"
+        Me.PictureBox4.Size = New System.Drawing.Size(57, 59)
+        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox4.TabIndex = 14
+        Me.PictureBox4.TabStop = False
+        '
+        'PictureBox3
+        '
+        Me.PictureBox3.Image = Global.VendingMachine.My.Resources.Resources.Dime
+        Me.PictureBox3.Location = New System.Drawing.Point(12, 172)
+        Me.PictureBox3.Name = "PictureBox3"
+        Me.PictureBox3.Size = New System.Drawing.Size(57, 62)
+        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox3.TabIndex = 13
+        Me.PictureBox3.TabStop = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.VendingMachine.My.Resources.Resources.Quarter
+        Me.PictureBox2.Location = New System.Drawing.Point(12, 96)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(57, 63)
+        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox2.TabIndex = 12
+        Me.PictureBox2.TabStop = False
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = Global.VendingMachine.My.Resources.Resources.DollarCoin
+        Me.PictureBox1.Location = New System.Drawing.Point(12, 23)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(57, 60)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 11
+        Me.PictureBox1.TabStop = False
+        '
+        'QuarterPictureBox
+        '
+        Me.QuarterPictureBox.Image = Global.VendingMachine.My.Resources.Resources.Quarter
+        Me.QuarterPictureBox.Location = New System.Drawing.Point(88, 432)
+        Me.QuarterPictureBox.Name = "QuarterPictureBox"
+        Me.QuarterPictureBox.Size = New System.Drawing.Size(58, 59)
+        Me.QuarterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.QuarterPictureBox.TabIndex = 7
+        Me.QuarterPictureBox.TabStop = False
+        Me.QuarterPictureBox.Visible = False
+        '
+        'DimePictureBox
+        '
+        Me.DimePictureBox.Image = Global.VendingMachine.My.Resources.Resources.Dime
+        Me.DimePictureBox.Location = New System.Drawing.Point(152, 432)
+        Me.DimePictureBox.Name = "DimePictureBox"
+        Me.DimePictureBox.Size = New System.Drawing.Size(68, 61)
+        Me.DimePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.DimePictureBox.TabIndex = 6
+        Me.DimePictureBox.TabStop = False
+        Me.DimePictureBox.Visible = False
+        '
+        'NickelPictureBox
+        '
+        Me.NickelPictureBox.Image = Global.VendingMachine.My.Resources.Resources.Nickel
+        Me.NickelPictureBox.Location = New System.Drawing.Point(226, 432)
+        Me.NickelPictureBox.Name = "NickelPictureBox"
+        Me.NickelPictureBox.Size = New System.Drawing.Size(58, 61)
+        Me.NickelPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.NickelPictureBox.TabIndex = 5
+        Me.NickelPictureBox.TabStop = False
+        Me.NickelPictureBox.Visible = False
+        '
+        'DollarPictureBox
+        '
+        Me.DollarPictureBox.Image = Global.VendingMachine.My.Resources.Resources.DollarCoin
+        Me.DollarPictureBox.Location = New System.Drawing.Point(24, 430)
+        Me.DollarPictureBox.Name = "DollarPictureBox"
+        Me.DollarPictureBox.Size = New System.Drawing.Size(58, 61)
+        Me.DollarPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.DollarPictureBox.TabIndex = 4
+        Me.DollarPictureBox.TabStop = False
+        Me.DollarPictureBox.Visible = False
+        '
+        'BuyB
+        '
+        Me.BuyB.Location = New System.Drawing.Point(239, 200)
+        Me.BuyB.Name = "BuyB"
+        Me.BuyB.Size = New System.Drawing.Size(75, 34)
+        Me.BuyB.TabIndex = 31
+        Me.BuyB.Text = "Buy"
+        Me.BuyB.UseVisualStyleBackColor = True
+        '
+        'IDTextbox
+        '
+        Me.IDTextbox.Location = New System.Drawing.Point(226, 172)
+        Me.IDTextbox.Name = "IDTextbox"
+        Me.IDTextbox.Size = New System.Drawing.Size(100, 22)
+        Me.IDTextbox.TabIndex = 32
+        '
+        'ProductPB
+        '
+        Me.ProductPB.Location = New System.Drawing.Point(616, 471)
+        Me.ProductPB.Name = "ProductPB"
+        Me.ProductPB.Size = New System.Drawing.Size(88, 85)
+        Me.ProductPB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.ProductPB.TabIndex = 33
+        Me.ProductPB.TabStop = False
         '
         'ProductControl16
         '
@@ -320,111 +431,12 @@ Partial Class Form1
         Me.ProductControl1.Size = New System.Drawing.Size(107, 106)
         Me.ProductControl1.TabIndex = 15
         '
-        'PictureBox4
-        '
-        Me.PictureBox4.Image = Global.VendingMachine.My.Resources.Resources.Nickel
-        Me.PictureBox4.Location = New System.Drawing.Point(12, 247)
-        Me.PictureBox4.Name = "PictureBox4"
-        Me.PictureBox4.Size = New System.Drawing.Size(57, 59)
-        Me.PictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox4.TabIndex = 14
-        Me.PictureBox4.TabStop = False
-        '
-        'PictureBox3
-        '
-        Me.PictureBox3.Image = Global.VendingMachine.My.Resources.Resources.Dime
-        Me.PictureBox3.Location = New System.Drawing.Point(12, 172)
-        Me.PictureBox3.Name = "PictureBox3"
-        Me.PictureBox3.Size = New System.Drawing.Size(57, 62)
-        Me.PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox3.TabIndex = 13
-        Me.PictureBox3.TabStop = False
-        '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.VendingMachine.My.Resources.Resources.Quarter
-        Me.PictureBox2.Location = New System.Drawing.Point(12, 96)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(57, 63)
-        Me.PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox2.TabIndex = 12
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.VendingMachine.My.Resources.Resources.DollarCoin
-        Me.PictureBox1.Location = New System.Drawing.Point(12, 23)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(57, 60)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 11
-        Me.PictureBox1.TabStop = False
-        '
-        'QuarterPictureBox
-        '
-        Me.QuarterPictureBox.Image = Global.VendingMachine.My.Resources.Resources.Quarter
-        Me.QuarterPictureBox.Location = New System.Drawing.Point(88, 432)
-        Me.QuarterPictureBox.Name = "QuarterPictureBox"
-        Me.QuarterPictureBox.Size = New System.Drawing.Size(58, 59)
-        Me.QuarterPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.QuarterPictureBox.TabIndex = 7
-        Me.QuarterPictureBox.TabStop = False
-        Me.QuarterPictureBox.Visible = False
-        '
-        'DimePictureBox
-        '
-        Me.DimePictureBox.Image = Global.VendingMachine.My.Resources.Resources.Dime
-        Me.DimePictureBox.Location = New System.Drawing.Point(152, 432)
-        Me.DimePictureBox.Name = "DimePictureBox"
-        Me.DimePictureBox.Size = New System.Drawing.Size(68, 61)
-        Me.DimePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.DimePictureBox.TabIndex = 6
-        Me.DimePictureBox.TabStop = False
-        Me.DimePictureBox.Visible = False
-        '
-        'NickelPictureBox
-        '
-        Me.NickelPictureBox.Image = Global.VendingMachine.My.Resources.Resources.Nickel
-        Me.NickelPictureBox.Location = New System.Drawing.Point(226, 432)
-        Me.NickelPictureBox.Name = "NickelPictureBox"
-        Me.NickelPictureBox.Size = New System.Drawing.Size(58, 61)
-        Me.NickelPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.NickelPictureBox.TabIndex = 5
-        Me.NickelPictureBox.TabStop = False
-        Me.NickelPictureBox.Visible = False
-        '
-        'DollarPictureBox
-        '
-        Me.DollarPictureBox.Image = Global.VendingMachine.My.Resources.Resources.DollarCoin
-        Me.DollarPictureBox.Location = New System.Drawing.Point(24, 430)
-        Me.DollarPictureBox.Name = "DollarPictureBox"
-        Me.DollarPictureBox.Size = New System.Drawing.Size(58, 61)
-        Me.DollarPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.DollarPictureBox.TabIndex = 4
-        Me.DollarPictureBox.TabStop = False
-        Me.DollarPictureBox.Visible = False
-        '
-        'BuyB
-        '
-        Me.BuyB.Location = New System.Drawing.Point(239, 200)
-        Me.BuyB.Name = "BuyB"
-        Me.BuyB.Size = New System.Drawing.Size(75, 23)
-        Me.BuyB.TabIndex = 31
-        Me.BuyB.Text = "Buy"
-        Me.BuyB.UseVisualStyleBackColor = True
-        '
-        'IDTextbox
-        '
-        Me.IDTextbox.Location = New System.Drawing.Point(226, 172)
-        Me.IDTextbox.Name = "IDTextbox"
-        Me.IDTextbox.Size = New System.Drawing.Size(100, 22)
-        Me.IDTextbox.TabIndex = 32
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(906, 521)
+        Me.ClientSize = New System.Drawing.Size(924, 569)
+        Me.Controls.Add(Me.ProductPB)
         Me.Controls.Add(Me.IDTextbox)
         Me.Controls.Add(Me.BuyB)
         Me.Controls.Add(Me.ProductControl16)
@@ -468,6 +480,7 @@ Partial Class Form1
         CType(Me.DimePictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NickelPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DollarPictureBox, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ProductPB, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -506,4 +519,5 @@ Partial Class Form1
     Friend WithEvents ProductControl16 As ProductControl
     Friend WithEvents BuyB As Button
     Friend WithEvents IDTextbox As TextBox
+    Friend WithEvents ProductPB As PictureBox
 End Class
