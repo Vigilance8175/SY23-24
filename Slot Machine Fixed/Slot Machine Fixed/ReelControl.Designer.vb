@@ -45,20 +45,26 @@ Partial Class ReelControl
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(3, 3)
+        Me.PictureBox1.BackColor = System.Drawing.Color.White
+        Me.PictureBox1.Location = New System.Drawing.Point(4, 3)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(82, 74)
+        Me.PictureBox1.Size = New System.Drawing.Size(147, 146)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
+        '
+        'Timer2
+        '
+        Me.Timer2.Interval = 250
         '
         'ReelControl
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "ReelControl"
-        Me.Size = New System.Drawing.Size(89, 81)
+        Me.Size = New System.Drawing.Size(154, 153)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
