@@ -119,5 +119,14 @@
     </None>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoodleBackground.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DoodleCharacter.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Puppy.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

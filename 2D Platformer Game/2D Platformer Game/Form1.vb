@@ -1,6 +1,4 @@
-﻿Imports System.Security.Cryptography
-
-Public Class frm2Dplatformer
+﻿Public Class frm2Dplatformer
     Dim moveSpeed As Integer = 15
     Dim isJumping As Boolean
     Private Sub frm2DPlatformer_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -14,11 +12,9 @@ Public Class frm2Dplatformer
                 isJumping = True
         End Select
     End Sub
-
     Private Sub tmrRight_Tick(sender As Object, e As EventArgs) Handles tmrRight.Tick
         picPlayer.Left += moveSpeed
     End Sub
-
     Private Sub frm2Dplatformer_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
         Select Case e.KeyCode
             Case Keys.Right
@@ -30,28 +26,23 @@ Public Class frm2Dplatformer
                 isJumping = False
         End Select
     End Sub
-
     Private Sub tmrLeft_Tick(sender As Object, e As EventArgs) Handles tmrLeft.Tick
         picPlayer.Left -= moveSpeed
     End Sub
-
     Private Sub tmrUp_Tick(sender As Object, e As EventArgs) Handles tmrUp.Tick
         picPlayer.Top -= moveSpeed
     End Sub
-
     Private Sub frm2Dplatformer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         tmrGameLogic.Start()
     End Sub
-
     Private Sub tmrGameLogic_Tick(sender As Object, e As EventArgs) Handles tmrGameLogic.Tick
-        If picPlayer.Bounds.IntersectsWith(picAir.Bounds) Then
+        If picPlayer.Bounds.IntersectsWith(picGround.Bounds) Then
+            tmrGravity.Stop()
+        Else
             If isJumping = False Then
                 tmrGravity.Start()
             End If
-        ElseIf picPlayer.Bounds.IntersectsWith(picGround.Bounds) Then
-            tmrGravity.Stop()
         End If
-
         For Each b As Control In Me.Controls
             If TypeOf b Is PictureBox Then
                 If b.Tag = "bound" Then
@@ -60,10 +51,28 @@ Public Class frm2Dplatformer
                     End If
                 End If
             End If
+            If TypeOf b Is PictureBox Then
+                If b.Tag = "restart" Then
+                    If picPlayer.Bounds.IntersectsWith(b.Bounds) Then
+                        picPlayer.Location = New Point(12, 350)
+                        PictureBox6.Visible = True
+                        PictureBox7.Visible = True
+                        PictureBox8.Visible = True
+                        PictureBox9.Visible = True
+                        PictureBox10.Visible = True
+                    End If
+                End If
+            End If
+            If TypeOf b Is PictureBox Then
+                If b.Tag = "collectable" Then
+                    If picPlayer.Bounds.IntersectsWith(b.Bounds) Then
+                        b.Visible = False
+                    End If
+                End If
+            End If
         Next
 
     End Sub
-
     Private Sub tmrGravity_Tick(sender As Object, e As EventArgs) Handles tmrGravity.Tick
         picPlayer.Top += moveSpeed
     End Sub
