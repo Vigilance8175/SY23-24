@@ -1,6 +1,7 @@
 ﻿Public Class frm2Dplatformer
-    Dim moveSpeed As Integer = 15
+    Dim moveSpeed As Integer = 10
     Dim isJumping As Boolean
+    Dim score As Integer
     Private Sub frm2DPlatformer_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
         Select Case e.KeyCode
             Case Keys.Right
@@ -60,18 +61,22 @@
                         PictureBox8.Visible = True
                         PictureBox9.Visible = True
                         PictureBox10.Visible = True
+                        PictureBox11.Visible = True
+                        score = 0
+                        ScoreLabel.Text = score
                     End If
                 End If
             End If
             If TypeOf b Is PictureBox Then
                 If b.Tag = "collectable" Then
-                    If picPlayer.Bounds.IntersectsWith(b.Bounds) Then
+                    If picPlayer.Bounds.IntersectsWith(b.Bounds) And b.Visible = True Then
                         b.Visible = False
+                        score += 1
+                        ScoreLabel.Text = score
                     End If
                 End If
             End If
         Next
-
     End Sub
     Private Sub tmrGravity_Tick(sender As Object, e As EventArgs) Handles tmrGravity.Tick
         picPlayer.Top += moveSpeed

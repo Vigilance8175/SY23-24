@@ -43,6 +43,10 @@ Partial Class frm2Dplatformer
         Me.PictureBox10 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ScoreLabel = New System.Windows.Forms.Label()
+        Me.PictureBox11 = New System.Windows.Forms.PictureBox()
+        Me.PictureBox12 = New System.Windows.Forms.PictureBox()
+        Me.Mover1 = New _2D_Platformer_Game.Mover()
+        Me.PictureBox13 = New System.Windows.Forms.PictureBox()
         CType(Me.picPlayer, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picAir, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.picGround, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -56,6 +60,9 @@ Partial Class frm2Dplatformer
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'picPlayer
@@ -91,23 +98,23 @@ Partial Class frm2Dplatformer
         '
         'tmrRight
         '
-        Me.tmrRight.Interval = 20
+        Me.tmrRight.Interval = 10
         '
         'tmrLeft
         '
-        Me.tmrLeft.Interval = 20
+        Me.tmrLeft.Interval = 10
         '
         'tmrUp
         '
-        Me.tmrUp.Interval = 20
+        Me.tmrUp.Interval = 10
         '
         'tmrGameLogic
         '
-        Me.tmrGameLogic.Interval = 20
+        Me.tmrGameLogic.Interval = 10
         '
         'tmrGravity
         '
-        Me.tmrGravity.Interval = 20
+        Me.tmrGravity.Interval = 10
         '
         'PictureBox1
         '
@@ -142,7 +149,7 @@ Partial Class frm2Dplatformer
         'PictureBox4
         '
         Me.PictureBox4.BackColor = System.Drawing.Color.IndianRed
-        Me.PictureBox4.Location = New System.Drawing.Point(698, 159)
+        Me.PictureBox4.Location = New System.Drawing.Point(709, 159)
         Me.PictureBox4.Name = "PictureBox4"
         Me.PictureBox4.Size = New System.Drawing.Size(117, 20)
         Me.PictureBox4.TabIndex = 6
@@ -161,7 +168,7 @@ Partial Class frm2Dplatformer
         '
         'PictureBox6
         '
-        Me.PictureBox6.BackColor = System.Drawing.Color.White
+        Me.PictureBox6.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox6.Image = Global._2D_Platformer_Game.My.Resources.Resources.Puppy
         Me.PictureBox6.Location = New System.Drawing.Point(531, 246)
         Me.PictureBox6.Name = "PictureBox6"
@@ -173,7 +180,7 @@ Partial Class frm2Dplatformer
         '
         'PictureBox7
         '
-        Me.PictureBox7.BackColor = System.Drawing.Color.White
+        Me.PictureBox7.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox7.Image = Global._2D_Platformer_Game.My.Resources.Resources.Puppy
         Me.PictureBox7.Location = New System.Drawing.Point(461, 246)
         Me.PictureBox7.Name = "PictureBox7"
@@ -187,7 +194,7 @@ Partial Class frm2Dplatformer
         '
         Me.PictureBox8.BackColor = System.Drawing.Color.White
         Me.PictureBox8.Image = Global._2D_Platformer_Game.My.Resources.Resources.Puppy
-        Me.PictureBox8.Location = New System.Drawing.Point(733, 119)
+        Me.PictureBox8.Location = New System.Drawing.Point(9980, 201)
         Me.PictureBox8.Name = "PictureBox8"
         Me.PictureBox8.Size = New System.Drawing.Size(47, 34)
         Me.PictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -197,7 +204,7 @@ Partial Class frm2Dplatformer
         '
         'PictureBox9
         '
-        Me.PictureBox9.BackColor = System.Drawing.Color.White
+        Me.PictureBox9.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox9.Image = Global._2D_Platformer_Game.My.Resources.Resources.Puppy
         Me.PictureBox9.Location = New System.Drawing.Point(276, 45)
         Me.PictureBox9.Name = "PictureBox9"
@@ -209,7 +216,7 @@ Partial Class frm2Dplatformer
         '
         'PictureBox10
         '
-        Me.PictureBox10.BackColor = System.Drawing.Color.White
+        Me.PictureBox10.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox10.Image = Global._2D_Platformer_Game.My.Resources.Resources.Puppy
         Me.PictureBox10.Location = New System.Drawing.Point(215, 300)
         Me.PictureBox10.Name = "PictureBox10"
@@ -222,6 +229,7 @@ Partial Class frm2Dplatformer
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Location = New System.Drawing.Point(12, 85)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(131, 16)
@@ -231,11 +239,59 @@ Partial Class frm2Dplatformer
         'ScoreLabel
         '
         Me.ScoreLabel.AutoSize = True
+        Me.ScoreLabel.BackColor = System.Drawing.Color.Transparent
         Me.ScoreLabel.Location = New System.Drawing.Point(70, 109)
         Me.ScoreLabel.Name = "ScoreLabel"
         Me.ScoreLabel.Size = New System.Drawing.Size(14, 16)
         Me.ScoreLabel.TabIndex = 14
         Me.ScoreLabel.Text = "0"
+        '
+        'PictureBox11
+        '
+        Me.PictureBox11.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox11.Image = Global._2D_Platformer_Game.My.Resources.Resources.Puppy
+        Me.PictureBox11.Location = New System.Drawing.Point(744, 119)
+        Me.PictureBox11.Name = "PictureBox11"
+        Me.PictureBox11.Size = New System.Drawing.Size(47, 34)
+        Me.PictureBox11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox11.TabIndex = 15
+        Me.PictureBox11.TabStop = False
+        Me.PictureBox11.Tag = "collectable"
+        '
+        'PictureBox12
+        '
+        Me.PictureBox12.BackColor = System.Drawing.Color.White
+        Me.PictureBox12.Image = Global._2D_Platformer_Game.My.Resources.Resources.Puppy
+        Me.PictureBox12.Location = New System.Drawing.Point(2458, 159)
+        Me.PictureBox12.Name = "PictureBox12"
+        Me.PictureBox12.Size = New System.Drawing.Size(47, 34)
+        Me.PictureBox12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox12.TabIndex = 17
+        Me.PictureBox12.TabStop = False
+        Me.PictureBox12.Tag = "collectable"
+        '
+        'Mover1
+        '
+        Me.Mover1.BackColor = System.Drawing.Color.Transparent
+        Me.Mover1.interval = 500
+        Me.Mover1.Location = New System.Drawing.Point(201, 199)
+        Me.Mover1.Name = "Mover1"
+        Me.Mover1.Size = New System.Drawing.Size(207, 36)
+        Me.Mover1.speed = 10
+        Me.Mover1.sprite = Me.PictureBox13
+        Me.Mover1.TabIndex = 18
+        '
+        'PictureBox13
+        '
+        Me.PictureBox13.BackColor = System.Drawing.Color.Transparent
+        Me.PictureBox13.Image = Global._2D_Platformer_Game.My.Resources.Resources.Puppy
+        Me.PictureBox13.Location = New System.Drawing.Point(206, 240)
+        Me.PictureBox13.Name = "PictureBox13"
+        Me.PictureBox13.Size = New System.Drawing.Size(47, 34)
+        Me.PictureBox13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox13.TabIndex = 19
+        Me.PictureBox13.TabStop = False
+        Me.PictureBox13.Tag = "collectable"
         '
         'frm2Dplatformer
         '
@@ -244,6 +300,10 @@ Partial Class frm2Dplatformer
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global._2D_Platformer_Game.My.Resources.Resources.DoodleBackground
         Me.ClientSize = New System.Drawing.Size(839, 494)
+        Me.Controls.Add(Me.PictureBox13)
+        Me.Controls.Add(Me.Mover1)
+        Me.Controls.Add(Me.PictureBox12)
+        Me.Controls.Add(Me.PictureBox11)
         Me.Controls.Add(Me.ScoreLabel)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox10)
@@ -274,6 +334,9 @@ Partial Class frm2Dplatformer
         CType(Me.PictureBox8, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox9, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox10, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox11, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox12, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox13, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -299,4 +362,8 @@ Partial Class frm2Dplatformer
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents Label1 As Label
     Friend WithEvents ScoreLabel As Label
+    Friend WithEvents PictureBox11 As PictureBox
+    Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents Mover1 As Mover
+    Friend WithEvents PictureBox13 As PictureBox
 End Class
