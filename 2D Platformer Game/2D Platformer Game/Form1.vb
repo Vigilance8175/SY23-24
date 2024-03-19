@@ -2,7 +2,7 @@
     Dim moveSpeed As Integer = 10
     Dim isJumping As Boolean
     Dim score As Integer
-    Private Sub frm2DPlatformer_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
+    Private Sub frm2DPlatformer_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyDown
         Select Case e.KeyCode
             Case Keys.Right
                 tmrRight.Start()
@@ -16,7 +16,7 @@
     Private Sub tmrRight_Tick(sender As Object, e As EventArgs) Handles tmrRight.Tick
         picPlayer.Left += moveSpeed
     End Sub
-    Private Sub frm2Dplatformer_KeyUp(sender As Object, e As KeyEventArgs) Handles Me.KeyUp
+    Private Sub frm2Dplatformer_KeyUp(sender As Object, e As KeyEventArgs) Handles TextBox1.KeyUp
         Select Case e.KeyCode
             Case Keys.Right
                 tmrRight.Stop()
@@ -55,13 +55,12 @@
             If TypeOf b Is PictureBox Then
                 If b.Tag = "restart" Then
                     If picPlayer.Bounds.IntersectsWith(b.Bounds) Then
-                        picPlayer.Location = New Point(12, 350)
+                        picPlayer.Location = PictureBox10.Location
+                        PictureBox13.Visible = True
                         PictureBox6.Visible = True
-                        PictureBox7.Visible = True
-                        PictureBox8.Visible = True
                         PictureBox9.Visible = True
-                        PictureBox10.Visible = True
-                        PictureBox11.Visible = True
+                        PictureBox7.Visible = True
+                        ProgressBar1.Value -= 25
                         score = 0
                         ScoreLabel.Text = score
                     End If
@@ -77,8 +76,32 @@
                 End If
             End If
         Next
+        If score = 4 Then
+            WLabel.Visible = True
+            ResetB.Visible = True
+            moveSpeed = 0
+        End If
+        If ProgressBar1.Value = 0 Then
+            Label2.Visible = True
+            ResetB.Visible = True
+            moveSpeed = 0
+        End If
     End Sub
     Private Sub tmrGravity_Tick(sender As Object, e As EventArgs) Handles tmrGravity.Tick
         picPlayer.Top += moveSpeed
+    End Sub
+    Private Sub ResetB_Click(sender As Object, e As EventArgs) Handles ResetB.Click
+        ProgressBar1.Value = 100
+        ResetB.Visible = False
+        Label2.Visible = False
+        WLabel.Visible = False
+        moveSpeed = 10
+        picPlayer.Location = PictureBox10.Location
+        score = 0
+        ScoreLabel.Text = score
+        PictureBox13.Visible = True
+        PictureBox6.Visible = True
+        PictureBox9.Visible = True
+        PictureBox7.Visible = True
     End Sub
 End Class
