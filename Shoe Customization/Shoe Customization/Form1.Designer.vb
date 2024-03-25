@@ -280,7 +280,7 @@ Partial Class Form1
         Me.PictureBox23.BackColor = System.Drawing.SystemColors.Control
         Me.PictureBox23.Location = New System.Drawing.Point(284, 143)
         Me.PictureBox23.Name = "PictureBox23"
-        Me.PictureBox23.Size = New System.Drawing.Size(14, 153)
+        Me.PictureBox23.Size = New System.Drawing.Size(14, 167)
         Me.PictureBox23.TabIndex = 21
         Me.PictureBox23.TabStop = False
         '
@@ -379,13 +379,13 @@ Partial Class Form1
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.PictureBox23)
         Me.Controls.Add(Me.PictureBox18)
         Me.Controls.Add(Me.PictureBox17)
         Me.Controls.Add(Me.PictureBox19)
         Me.Controls.Add(Me.PictureBox20)
         Me.Controls.Add(Me.PictureBox21)
         Me.Controls.Add(Me.PictureBox22)
-        Me.Controls.Add(Me.PictureBox23)
         Me.Controls.Add(Me.PictureBox24)
         Me.Controls.Add(Me.PictureBox25)
         Me.Controls.Add(Me.PictureBox26)
