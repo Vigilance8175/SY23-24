@@ -32,6 +32,9 @@ Partial Class Form2
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.CheckBox10 = New System.Windows.Forms.CheckBox()
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -92,7 +95,7 @@ Partial Class Form2
         Me.CheckBox5.Name = "CheckBox5"
         Me.CheckBox5.Size = New System.Drawing.Size(76, 20)
         Me.CheckBox5.TabIndex = 5
-        Me.CheckBox5.Text = "Woman"
+        Me.CheckBox5.Text = "Women"
         Me.CheckBox5.UseVisualStyleBackColor = True
         Me.CheckBox5.Visible = False
         '
@@ -102,7 +105,7 @@ Partial Class Form2
         Me.DomainUpDown1.Name = "DomainUpDown1"
         Me.DomainUpDown1.Size = New System.Drawing.Size(50, 22)
         Me.DomainUpDown1.TabIndex = 6
-        Me.DomainUpDown1.Text = "0"
+        Me.DomainUpDown1.Text = "10"
         Me.DomainUpDown1.Visible = False
         '
         'CheckBox8
@@ -138,11 +141,27 @@ Partial Class Form2
         Me.CheckBox6.UseVisualStyleBackColor = True
         Me.CheckBox6.Visible = False
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.PictureBox1.Location = New System.Drawing.Point(238, 136)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(156, 84)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 13
+        Me.PictureBox1.TabStop = False
+        Me.PictureBox1.Visible = False
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.CheckBox6)
         Me.Controls.Add(Me.CheckBox10)
         Me.Controls.Add(Me.CheckBox8)
@@ -155,6 +174,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Label1)
         Me.Name = "Form2"
         Me.Text = "Shoe Add Ons"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -170,4 +190,6 @@ Partial Class Form2
     Friend WithEvents CheckBox8 As CheckBox
     Friend WithEvents CheckBox10 As CheckBox
     Friend WithEvents CheckBox6 As CheckBox
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

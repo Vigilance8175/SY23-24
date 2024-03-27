@@ -32,4 +32,14 @@
             CheckBox6.Visible = True
         End If
     End Sub
+
+    Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
+        PictureBox1.Load(OpenFileDialog1.FileName)
+    End Sub
+
+    Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
+        If CheckBox3.Checked Then
+            PictureBox1.Visible = True
+        End If
+    End Sub
 End Class
