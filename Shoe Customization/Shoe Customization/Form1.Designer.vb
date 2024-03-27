@@ -67,6 +67,12 @@ Partial Class Form1
         Me.Button10 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.shoecolor = New System.Windows.Forms.Button()
+        Me.solecolor = New System.Windows.Forms.Button()
+        Me.lacecolor = New System.Windows.Forms.Button()
+        Me.stripecolor = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Button12 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -163,9 +169,9 @@ Partial Class Form1
         '
         'PictureBox8
         '
-        Me.PictureBox8.Location = New System.Drawing.Point(101, 166)
+        Me.PictureBox8.Location = New System.Drawing.Point(101, 165)
         Me.PictureBox8.Name = "PictureBox8"
-        Me.PictureBox8.Size = New System.Drawing.Size(205, 10)
+        Me.PictureBox8.Size = New System.Drawing.Size(205, 17)
         Me.PictureBox8.TabIndex = 7
         Me.PictureBox8.TabStop = False
         '
@@ -388,7 +394,7 @@ Partial Class Form1
         '
         'Button1
         '
-        Me.Button1.BackColor = System.Drawing.Color.White
+        Me.Button1.BackColor = System.Drawing.SystemColors.ButtonFace
         Me.Button1.Location = New System.Drawing.Point(621, 35)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(75, 23)
@@ -505,11 +511,73 @@ Partial Class Form1
         Me.Label1.TabIndex = 46
         Me.Label1.Text = "Colors:"
         '
+        'shoecolor
+        '
+        Me.shoecolor.Location = New System.Drawing.Point(45, 53)
+        Me.shoecolor.Name = "shoecolor"
+        Me.shoecolor.Size = New System.Drawing.Size(87, 45)
+        Me.shoecolor.TabIndex = 47
+        Me.shoecolor.Text = "Shoe Color"
+        Me.shoecolor.UseVisualStyleBackColor = True
+        '
+        'solecolor
+        '
+        Me.solecolor.Location = New System.Drawing.Point(138, 53)
+        Me.solecolor.Name = "solecolor"
+        Me.solecolor.Size = New System.Drawing.Size(87, 45)
+        Me.solecolor.TabIndex = 48
+        Me.solecolor.Text = "Sole Color"
+        Me.solecolor.UseVisualStyleBackColor = True
+        '
+        'lacecolor
+        '
+        Me.lacecolor.Location = New System.Drawing.Point(231, 52)
+        Me.lacecolor.Name = "lacecolor"
+        Me.lacecolor.Size = New System.Drawing.Size(87, 45)
+        Me.lacecolor.TabIndex = 49
+        Me.lacecolor.Text = "Lace Color"
+        Me.lacecolor.UseVisualStyleBackColor = True
+        '
+        'stripecolor
+        '
+        Me.stripecolor.Location = New System.Drawing.Point(323, 52)
+        Me.stripecolor.Name = "stripecolor"
+        Me.stripecolor.Size = New System.Drawing.Size(87, 45)
+        Me.stripecolor.TabIndex = 50
+        Me.stripecolor.Text = "Stripe Color"
+        Me.stripecolor.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(45, 16)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        Me.TextBox1.Size = New System.Drawing.Size(100, 22)
+        Me.TextBox1.TabIndex = 51
+        Me.TextBox1.Text = "Shoe Designer"
+        '
+        'Button12
+        '
+        Me.Button12.BackColor = System.Drawing.Color.Crimson
+        Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button12.Location = New System.Drawing.Point(45, 343)
+        Me.Button12.Name = "Button12"
+        Me.Button12.Size = New System.Drawing.Size(145, 63)
+        Me.Button12.TabIndex = 52
+        Me.Button12.Text = "Clear All Colors"
+        Me.Button12.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button12)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.stripecolor)
+        Me.Controls.Add(Me.lacecolor)
+        Me.Controls.Add(Me.solecolor)
+        Me.Controls.Add(Me.shoecolor)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button11)
         Me.Controls.Add(Me.Button9)
@@ -640,4 +708,10 @@ Partial Class Form1
     Friend WithEvents Button10 As Button
     Friend WithEvents Button11 As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents shoecolor As Button
+    Friend WithEvents solecolor As Button
+    Friend WithEvents lacecolor As Button
+    Friend WithEvents stripecolor As Button
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Button12 As Button
 End Class
