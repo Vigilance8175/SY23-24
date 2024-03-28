@@ -73,6 +73,7 @@ Partial Class Form1
         Me.stripecolor = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Button12 = New System.Windows.Forms.Button()
+        Me.Button13 = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -567,11 +568,21 @@ Partial Class Form1
         Me.Button12.Text = "Clear All Colors"
         Me.Button12.UseVisualStyleBackColor = False
         '
+        'Button13
+        '
+        Me.Button13.Location = New System.Drawing.Point(678, 383)
+        Me.Button13.Name = "Button13"
+        Me.Button13.Size = New System.Drawing.Size(121, 65)
+        Me.Button13.TabIndex = 53
+        Me.Button13.Text = "Next"
+        Me.Button13.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button13)
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.stripecolor)
@@ -714,4 +725,5 @@ Partial Class Form1
     Friend WithEvents stripecolor As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents Button12 As Button
+    Friend WithEvents Button13 As Button
 End Class

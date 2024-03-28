@@ -1,4 +1,6 @@
-﻿Public Class Form1
+﻿Imports System.Reflection.Emit
+
+Public Class Form1
     Dim Sc As Color
     Private Sub shoecolor_Click(sender As Object, e As EventArgs) Handles shoecolor.Click
         PictureBox1.BackColor = Sc
@@ -84,5 +86,16 @@
         PictureBox24.BackColor = Sc
         PictureBox25.BackColor = Sc
         PictureBox26.BackColor = Sc
+    End Sub
+
+    Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
+        Me.Hide()
+        Dim f2 As New Form2
+        f2.ShowDialog()
+        PictureBox2.BackColor = f2.shoecol
+        PictureBox33.BackColor = f2.solecol
+        PictureBox19.BackColor = f2.lacecol
+        PictureBox25.BackColor = f2.stripecol
+        Me.Show()
     End Sub
 End Class
