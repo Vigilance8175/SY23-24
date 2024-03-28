@@ -1,4 +1,8 @@
 ﻿Public Class Form2
+    Public shoecol As Color
+    Public solecol As Color
+    Public lacecol As Color
+    Public stripecol As Color
     Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox1.CheckedChanged
         If CheckBox1.Checked Then
             CheckBox4.Visible = True
