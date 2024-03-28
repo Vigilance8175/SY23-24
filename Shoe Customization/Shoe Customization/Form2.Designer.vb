@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form2
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form2
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
@@ -34,6 +34,7 @@ Partial Class Form2
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.nextbtn = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -41,7 +42,7 @@ Partial Class Form2
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
-        Me.Label1.Location = New System.Drawing.Point(12, 9)
+        Me.Label1.Location = New System.Drawing.Point(12, 12)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(142, 25)
         Me.Label1.TabIndex = 0
@@ -156,11 +157,21 @@ Partial Class Form2
         Me.PictureBox1.TabStop = False
         Me.PictureBox1.Visible = False
         '
+        'nextbtn
+        '
+        Me.nextbtn.Location = New System.Drawing.Point(678, 384)
+        Me.nextbtn.Name = "nextbtn"
+        Me.nextbtn.Size = New System.Drawing.Size(121, 65)
+        Me.nextbtn.TabIndex = 54
+        Me.nextbtn.Text = "Next"
+        Me.nextbtn.UseVisualStyleBackColor = True
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.nextbtn)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.CheckBox6)
         Me.Controls.Add(Me.CheckBox10)
@@ -192,4 +203,5 @@ Partial Class Form2
     Friend WithEvents CheckBox6 As CheckBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents nextbtn As Button
 End Class

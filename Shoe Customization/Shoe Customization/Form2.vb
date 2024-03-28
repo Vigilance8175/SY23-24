@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel.Design
+Imports System.Reflection.Emit
 
 Public Class Form2
     Public shoecol As Color
@@ -53,5 +54,16 @@ Public Class Form2
         Else
             PictureBox1.Visible = False
         End If
+    End Sub
+
+    Private Sub nextbtn_Click(sender As Object, e As EventArgs) Handles nextbtn.Click
+        Me.Hide()
+        Dim f3 As New Form3
+        f3.shoecol2 = shoecol
+        f3.solecol2 = solecol
+        f3.lacecol2 = lacecol
+        f3.stripecol2 = stripecol
+        f3.ShowDialog()
+        Me.Show()
     End Sub
 End Class

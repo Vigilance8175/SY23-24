@@ -91,11 +91,11 @@ Public Class Form1
     Private Sub Button13_Click(sender As Object, e As EventArgs) Handles Button13.Click
         Me.Hide()
         Dim f2 As New Form2
+        f2.shoecol = PictureBox2.BackColor
+        f2.solecol = PictureBox33.BackColor
+        f2.lacecol = PictureBox19.BackColor
+        f2.stripecol = PictureBox25.BackColor
         f2.ShowDialog()
-        PictureBox2.BackColor = f2.shoecol
-        PictureBox33.BackColor = f2.solecol
-        PictureBox19.BackColor = f2.lacecol
-        PictureBox25.BackColor = f2.stripecol
         Me.Show()
     End Sub
 End Class
