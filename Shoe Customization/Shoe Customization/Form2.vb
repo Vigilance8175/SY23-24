@@ -1,4 +1,6 @@
-﻿Public Class Form2
+﻿Imports System.ComponentModel.Design
+
+Public Class Form2
     Public shoecol As Color
     Public solecol As Color
     Public lacecol As Color
@@ -34,6 +36,10 @@
             CheckBox8.Visible = True
             CheckBox10.Visible = True
             CheckBox6.Visible = True
+        Else
+            CheckBox8.Visible = False
+            CheckBox10.Visible = False
+            CheckBox6.Visible = False
         End If
     End Sub
 
@@ -44,6 +50,8 @@
     Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged
         If CheckBox3.Checked Then
             PictureBox1.Visible = True
+        Else
+            PictureBox1.Visible = False
         End If
     End Sub
 End Class
