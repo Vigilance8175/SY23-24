@@ -46,6 +46,7 @@ Partial Class Form3
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label16 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -194,9 +195,10 @@ Partial Class Form3
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.Color.Red
         Me.TextBox1.Location = New System.Drawing.Point(347, 236)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(136, 22)
+        Me.TextBox1.Size = New System.Drawing.Size(158, 22)
         Me.TextBox1.TabIndex = 17
         '
         'Label13
@@ -228,39 +230,55 @@ Partial Class Form3
         '
         'TextBox2
         '
+        Me.TextBox2.BackColor = System.Drawing.Color.Red
         Me.TextBox2.Location = New System.Drawing.Point(347, 265)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(136, 22)
+        Me.TextBox2.Size = New System.Drawing.Size(158, 22)
         Me.TextBox2.TabIndex = 21
         '
         'TextBox3
         '
+        Me.TextBox3.BackColor = System.Drawing.Color.Red
         Me.TextBox3.Location = New System.Drawing.Point(347, 292)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(136, 22)
+        Me.TextBox3.Size = New System.Drawing.Size(158, 22)
         Me.TextBox3.TabIndex = 22
         '
         'TextBox4
         '
+        Me.TextBox4.BackColor = System.Drawing.Color.Red
         Me.TextBox4.Location = New System.Drawing.Point(347, 322)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(136, 22)
+        Me.TextBox4.Size = New System.Drawing.Size(158, 22)
         Me.TextBox4.TabIndex = 23
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(322, 363)
+        Me.Button1.Location = New System.Drawing.Point(322, 361)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.Size = New System.Drawing.Size(87, 23)
         Me.Button1.TabIndex = 24
         Me.Button1.Text = "Purchase"
         Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.Visible = False
+        '
+        'Label16
+        '
+        Me.Label16.AutoSize = True
+        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label16.Location = New System.Drawing.Point(6, 395)
+        Me.Label16.Name = "Label16"
+        Me.Label16.Size = New System.Drawing.Size(719, 46)
+        Me.Label16.TabIndex = 25
+        Me.Label16.Text = "THANK YOU FOR YOUR PURCHASE!"
+        Me.Label16.Visible = False
         '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.TextBox3)
@@ -320,4 +338,5 @@ Partial Class Form3
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents Button1 As Button
+    Friend WithEvents Label16 As Label
 End Class
