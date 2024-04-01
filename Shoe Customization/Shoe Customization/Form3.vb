@@ -57,4 +57,7 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Label16.Visible = True
     End Sub
+    Function price(size As Integer, men As Integer, women As Integer) As Integer
+        Return 80 + 0.25 * size + 10 * men + 8 * women
+    End Function
 End Class
