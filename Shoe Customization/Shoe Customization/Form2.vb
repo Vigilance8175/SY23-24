@@ -13,6 +13,7 @@ Public Class Form2
         Else
             CheckBox4.Visible = False
             CheckBox5.Visible = False
+            DomainUpDown1.Visible = False
         End If
     End Sub
 
@@ -46,6 +47,9 @@ Public Class Form2
 
     Private Sub OpenFileDialog1_FileOk(sender As Object, e As System.ComponentModel.CancelEventArgs) Handles OpenFileDialog1.FileOk
         PictureBox1.Load(OpenFileDialog1.FileName)
+    End Sub
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
+        OpenFileDialog1.ShowDialog()
     End Sub
 
     Private Sub CheckBox3_CheckedChanged(sender As Object, e As EventArgs) Handles CheckBox3.CheckedChanged

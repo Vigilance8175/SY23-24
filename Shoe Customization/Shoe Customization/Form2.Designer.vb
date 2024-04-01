@@ -51,7 +51,7 @@ Partial Class Form2
         'CheckBox1
         '
         Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(32, 110)
+        Me.CheckBox1.Location = New System.Drawing.Point(98, 110)
         Me.CheckBox1.Name = "CheckBox1"
         Me.CheckBox1.Size = New System.Drawing.Size(90, 20)
         Me.CheckBox1.TabIndex = 1
@@ -61,7 +61,7 @@ Partial Class Form2
         'CheckBox2
         '
         Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(459, 110)
+        Me.CheckBox2.Location = New System.Drawing.Point(525, 110)
         Me.CheckBox2.Name = "CheckBox2"
         Me.CheckBox2.Size = New System.Drawing.Size(138, 20)
         Me.CheckBox2.TabIndex = 2
@@ -71,7 +71,7 @@ Partial Class Form2
         'CheckBox3
         '
         Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(238, 110)
+        Me.CheckBox3.Location = New System.Drawing.Point(304, 110)
         Me.CheckBox3.Name = "CheckBox3"
         Me.CheckBox3.Size = New System.Drawing.Size(105, 20)
         Me.CheckBox3.TabIndex = 3
@@ -81,7 +81,7 @@ Partial Class Form2
         'CheckBox4
         '
         Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(72, 136)
+        Me.CheckBox4.Location = New System.Drawing.Point(138, 136)
         Me.CheckBox4.Name = "CheckBox4"
         Me.CheckBox4.Size = New System.Drawing.Size(55, 20)
         Me.CheckBox4.TabIndex = 4
@@ -92,7 +92,7 @@ Partial Class Form2
         'CheckBox5
         '
         Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(72, 162)
+        Me.CheckBox5.Location = New System.Drawing.Point(138, 162)
         Me.CheckBox5.Name = "CheckBox5"
         Me.CheckBox5.Size = New System.Drawing.Size(76, 20)
         Me.CheckBox5.TabIndex = 5
@@ -102,7 +102,20 @@ Partial Class Form2
         '
         'DomainUpDown1
         '
-        Me.DomainUpDown1.Location = New System.Drawing.Point(72, 188)
+        Me.DomainUpDown1.Items.Add("13")
+        Me.DomainUpDown1.Items.Add("12")
+        Me.DomainUpDown1.Items.Add("11")
+        Me.DomainUpDown1.Items.Add("10")
+        Me.DomainUpDown1.Items.Add("9")
+        Me.DomainUpDown1.Items.Add("8")
+        Me.DomainUpDown1.Items.Add("7")
+        Me.DomainUpDown1.Items.Add("6")
+        Me.DomainUpDown1.Items.Add("5")
+        Me.DomainUpDown1.Items.Add("4")
+        Me.DomainUpDown1.Items.Add("3")
+        Me.DomainUpDown1.Items.Add("2")
+        Me.DomainUpDown1.Items.Add("1")
+        Me.DomainUpDown1.Location = New System.Drawing.Point(138, 188)
         Me.DomainUpDown1.Name = "DomainUpDown1"
         Me.DomainUpDown1.Size = New System.Drawing.Size(50, 22)
         Me.DomainUpDown1.TabIndex = 6
@@ -112,7 +125,7 @@ Partial Class Form2
         'CheckBox8
         '
         Me.CheckBox8.AutoSize = True
-        Me.CheckBox8.Location = New System.Drawing.Point(502, 136)
+        Me.CheckBox8.Location = New System.Drawing.Point(568, 136)
         Me.CheckBox8.Name = "CheckBox8"
         Me.CheckBox8.Size = New System.Drawing.Size(134, 20)
         Me.CheckBox8.TabIndex = 9
@@ -123,7 +136,7 @@ Partial Class Form2
         'CheckBox10
         '
         Me.CheckBox10.AutoSize = True
-        Me.CheckBox10.Location = New System.Drawing.Point(502, 162)
+        Me.CheckBox10.Location = New System.Drawing.Point(568, 162)
         Me.CheckBox10.Name = "CheckBox10"
         Me.CheckBox10.Size = New System.Drawing.Size(128, 20)
         Me.CheckBox10.TabIndex = 11
@@ -134,7 +147,7 @@ Partial Class Form2
         'CheckBox6
         '
         Me.CheckBox6.AutoSize = True
-        Me.CheckBox6.Location = New System.Drawing.Point(502, 189)
+        Me.CheckBox6.Location = New System.Drawing.Point(568, 189)
         Me.CheckBox6.Name = "CheckBox6"
         Me.CheckBox6.Size = New System.Drawing.Size(78, 20)
         Me.CheckBox6.TabIndex = 12
@@ -149,7 +162,7 @@ Partial Class Form2
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Location = New System.Drawing.Point(238, 136)
+        Me.PictureBox1.Location = New System.Drawing.Point(304, 136)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(156, 84)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
