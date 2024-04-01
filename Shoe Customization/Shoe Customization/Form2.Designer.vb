@@ -63,9 +63,9 @@ Partial Class Form2
         Me.CheckBox2.AutoSize = True
         Me.CheckBox2.Location = New System.Drawing.Point(525, 110)
         Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(138, 20)
+        Me.CheckBox2.Size = New System.Drawing.Size(186, 20)
         Me.CheckBox2.TabIndex = 2
-        Me.CheckBox2.Text = "Cleaning Supplies"
+        Me.CheckBox2.Text = "Cleaning Supplies - $17.50"
         Me.CheckBox2.UseVisualStyleBackColor = True
         '
         'CheckBox3
@@ -73,9 +73,9 @@ Partial Class Form2
         Me.CheckBox3.AutoSize = True
         Me.CheckBox3.Location = New System.Drawing.Point(304, 110)
         Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(105, 20)
+        Me.CheckBox3.Size = New System.Drawing.Size(153, 20)
         Me.CheckBox3.TabIndex = 3
-        Me.CheckBox3.Text = "Custom Sole"
+        Me.CheckBox3.Text = "Custom Sole - $15.00"
         Me.CheckBox3.UseVisualStyleBackColor = True
         '
         'CheckBox4
@@ -127,9 +127,9 @@ Partial Class Form2
         Me.CheckBox8.AutoSize = True
         Me.CheckBox8.Location = New System.Drawing.Point(568, 136)
         Me.CheckBox8.Name = "CheckBox8"
-        Me.CheckBox8.Size = New System.Drawing.Size(134, 20)
+        Me.CheckBox8.Size = New System.Drawing.Size(175, 20)
         Me.CheckBox8.TabIndex = 9
-        Me.CheckBox8.Text = "Alternate Brushes"
+        Me.CheckBox8.Text = "Alternate Brushes - $8.75"
         Me.CheckBox8.UseVisualStyleBackColor = True
         Me.CheckBox8.Visible = False
         '
@@ -138,9 +138,9 @@ Partial Class Form2
         Me.CheckBox10.AutoSize = True
         Me.CheckBox10.Location = New System.Drawing.Point(568, 162)
         Me.CheckBox10.Name = "CheckBox10"
-        Me.CheckBox10.Size = New System.Drawing.Size(128, 20)
+        Me.CheckBox10.Size = New System.Drawing.Size(176, 20)
         Me.CheckBox10.TabIndex = 11
-        Me.CheckBox10.Text = "Microfiber Towel"
+        Me.CheckBox10.Text = "Microfiber Towel - $10.00"
         Me.CheckBox10.UseVisualStyleBackColor = True
         Me.CheckBox10.Visible = False
         '
@@ -149,9 +149,9 @@ Partial Class Form2
         Me.CheckBox6.AutoSize = True
         Me.CheckBox6.Location = New System.Drawing.Point(568, 189)
         Me.CheckBox6.Name = "CheckBox6"
-        Me.CheckBox6.Size = New System.Drawing.Size(78, 20)
+        Me.CheckBox6.Size = New System.Drawing.Size(119, 20)
         Me.CheckBox6.TabIndex = 12
-        Me.CheckBox6.Text = "Polisher"
+        Me.CheckBox6.Text = "Polisher - $7.50"
         Me.CheckBox6.UseVisualStyleBackColor = True
         Me.CheckBox6.Visible = False
         '
@@ -172,7 +172,7 @@ Partial Class Form2
         '
         'nextbtn
         '
-        Me.nextbtn.Location = New System.Drawing.Point(677, 231)
+        Me.nextbtn.Location = New System.Drawing.Point(680, 234)
         Me.nextbtn.Name = "nextbtn"
         Me.nextbtn.Size = New System.Drawing.Size(121, 65)
         Me.nextbtn.TabIndex = 54
@@ -183,7 +183,7 @@ Partial Class Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 301)
+        Me.ClientSize = New System.Drawing.Size(800, 298)
         Me.Controls.Add(Me.nextbtn)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.CheckBox6)
