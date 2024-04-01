@@ -172,7 +172,7 @@ Partial Class Form2
         '
         'nextbtn
         '
-        Me.nextbtn.Location = New System.Drawing.Point(678, 384)
+        Me.nextbtn.Location = New System.Drawing.Point(677, 231)
         Me.nextbtn.Name = "nextbtn"
         Me.nextbtn.Size = New System.Drawing.Size(121, 65)
         Me.nextbtn.TabIndex = 54
@@ -183,7 +183,7 @@ Partial Class Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.ClientSize = New System.Drawing.Size(800, 301)
         Me.Controls.Add(Me.nextbtn)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.CheckBox6)
