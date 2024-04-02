@@ -28,14 +28,15 @@ Partial Class Form2
         Me.CheckBox3 = New System.Windows.Forms.CheckBox()
         Me.CheckBox4 = New System.Windows.Forms.CheckBox()
         Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.DomainUpDown1 = New System.Windows.Forms.DomainUpDown()
         Me.CheckBox8 = New System.Windows.Forms.CheckBox()
         Me.CheckBox10 = New System.Windows.Forms.CheckBox()
         Me.CheckBox6 = New System.Windows.Forms.CheckBox()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.nextbtn = New System.Windows.Forms.Button()
+        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -100,28 +101,6 @@ Partial Class Form2
         Me.CheckBox5.UseVisualStyleBackColor = True
         Me.CheckBox5.Visible = False
         '
-        'DomainUpDown1
-        '
-        Me.DomainUpDown1.Items.Add("13")
-        Me.DomainUpDown1.Items.Add("12")
-        Me.DomainUpDown1.Items.Add("11")
-        Me.DomainUpDown1.Items.Add("10")
-        Me.DomainUpDown1.Items.Add("9")
-        Me.DomainUpDown1.Items.Add("8")
-        Me.DomainUpDown1.Items.Add("7")
-        Me.DomainUpDown1.Items.Add("6")
-        Me.DomainUpDown1.Items.Add("5")
-        Me.DomainUpDown1.Items.Add("4")
-        Me.DomainUpDown1.Items.Add("3")
-        Me.DomainUpDown1.Items.Add("2")
-        Me.DomainUpDown1.Items.Add("1")
-        Me.DomainUpDown1.Location = New System.Drawing.Point(138, 188)
-        Me.DomainUpDown1.Name = "DomainUpDown1"
-        Me.DomainUpDown1.Size = New System.Drawing.Size(50, 22)
-        Me.DomainUpDown1.TabIndex = 6
-        Me.DomainUpDown1.Text = "10"
-        Me.DomainUpDown1.Visible = False
-        '
         'CheckBox8
         '
         Me.CheckBox8.AutoSize = True
@@ -179,17 +158,25 @@ Partial Class Form2
         Me.nextbtn.Text = "Next"
         Me.nextbtn.UseVisualStyleBackColor = True
         '
+        'NumericUpDown1
+        '
+        Me.NumericUpDown1.Location = New System.Drawing.Point(138, 188)
+        Me.NumericUpDown1.Name = "NumericUpDown1"
+        Me.NumericUpDown1.Size = New System.Drawing.Size(120, 22)
+        Me.NumericUpDown1.TabIndex = 55
+        Me.NumericUpDown1.Visible = False
+        '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 298)
+        Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.nextbtn)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.CheckBox6)
         Me.Controls.Add(Me.CheckBox10)
         Me.Controls.Add(Me.CheckBox8)
-        Me.Controls.Add(Me.DomainUpDown1)
         Me.Controls.Add(Me.CheckBox5)
         Me.Controls.Add(Me.CheckBox4)
         Me.Controls.Add(Me.CheckBox3)
@@ -199,6 +186,7 @@ Partial Class Form2
         Me.Name = "Form2"
         Me.Text = "Shoe Add Ons"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -210,11 +198,11 @@ Partial Class Form2
     Friend WithEvents CheckBox3 As CheckBox
     Friend WithEvents CheckBox4 As CheckBox
     Friend WithEvents CheckBox5 As CheckBox
-    Friend WithEvents DomainUpDown1 As DomainUpDown
     Friend WithEvents CheckBox8 As CheckBox
     Friend WithEvents CheckBox10 As CheckBox
     Friend WithEvents CheckBox6 As CheckBox
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents nextbtn As Button
+    Friend WithEvents NumericUpDown1 As NumericUpDown
 End Class

@@ -7,6 +7,14 @@
     Public solecol2 As Color
     Public lacecol2 As Color
     Public stripecol2 As Color
+    Public Si2 As Integer
+    Public men2 As Integer
+    Public women2 As Integer
+    Public custsole2 As Integer
+    Public brush2 As Integer
+    Public towel2 As Integer
+    Public polish2 As Integer
+    Public supplies2 As Integer
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles TextBox1.TextChanged
         If TextBox1.Text Like "#### #### #### ####" Then
             num += 1
@@ -53,14 +61,18 @@
         PictureBox2.BackColor = solecol2
         PictureBox3.BackColor = lacecol2
         PictureBox4.BackColor = stripecol2
+        Label6.Text = Si2
+        Label8.Text = extra(supplies2, brush2, towel2, polish2, custsole2).ToString("C2")
+        Label10.Text = (extra(supplies2, brush2, towel2, polish2, custsole2) + shoesize(Si2, men2, women2)).ToString("c2")
+
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Label16.Visible = True
     End Sub
-    Function shoesize(size As Integer, men As Integer, women As Integer) As Integer
+    Function shoesize(size As Integer, men As Integer, women As Integer) As Decimal
         Return 80 + 0.25 * size + 10 * men + 8 * women
     End Function
-    Function extra(supplies As Integer, brushes As Integer, towel As Integer, polisher As Integer) As Integer
-        Return 17.5 * supplies + 8.75 * brushes + 10 * towel + 7.5 * polisher
+    Function extra(supplies As Integer, brushes As Integer, towel As Integer, polisher As Integer, sole As Integer) As Decimal
+        Return 17.5 * supplies + 8.75 * brushes + 10 * towel + 7.5 * polisher + 15 * sole
     End Function
 End Class
