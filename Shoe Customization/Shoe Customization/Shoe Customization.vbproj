@@ -150,5 +150,14 @@
   <ItemGroup>
     <None Include="Resources\shoecutout.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Custom2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SneakyLogo.PNG" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
