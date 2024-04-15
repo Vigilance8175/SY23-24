@@ -28,3 +28,29 @@ ul {
 b {
     color: #e1d2b0
 }
+h2 {
+    text-align: center;
+    color: #e1d2b0
+}
+h3 {
+    text-align: center;
+    color: #e1d2b0
+}
+.Cleaning {
+    height: 300px;
+    width: 150px
+}
+.Brushes {
+    height: 200px;
+    width: 300px
+}
+.Towel {
+    height: 150px;
+    width: 300px
+}
+.Solutions {
+    height: 300px;
+    width: 250px
+}
+
+
