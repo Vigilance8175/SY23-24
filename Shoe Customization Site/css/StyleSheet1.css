@@ -52,5 +52,10 @@ h3 {
     height: 300px;
     width: 250px
 }
+form {
+    text-align: center;
+    color: #e1d2b0;
+    font-size: 20px;
+}
 
 
