@@ -27,12 +27,13 @@
         <Button x:Name="EllipseButton" Content="Ellipse" HorizontalAlignment="Left" Margin="45,390,0,0" VerticalAlignment="Top"/>
         <Label x:Name="ShapeLabel" Content="Ellipse" HorizontalAlignment="Left" Margin="10,102,0,0" VerticalAlignment="Top"/>
         <Button x:Name="SaveButton" Content="Save" HorizontalAlignment="Left" Margin="111,40,0,0" VerticalAlignment="Top"/>
-        <Rectangle x:Name="Color1" HorizontalAlignment="Left" Height="55" Margin="125,181,0,0" Stroke="Black" VerticalAlignment="Top" Width="56" Fill="Black"/>
-        <Rectangle x:Name="Color2" HorizontalAlignment="Left" Height="55" Margin="186,181,0,0" Stroke="Black" VerticalAlignment="Top" Width="56" Fill="Black"/>
-        <Slider x:Name="R" HorizontalAlignment="Left" Margin="125,253,0,0" VerticalAlignment="Top" Width="120" Maximum="256"/>
-        <Slider x:Name="B" HorizontalAlignment="Left" Margin="125,299,0,0" VerticalAlignment="Top" Width="120" Maximum="255"/>
-        <Slider x:Name="G" HorizontalAlignment="Left" Margin="125,276,0,0" VerticalAlignment="Top" Width="120" Maximum="255"/>
-        <Slider x:Name="AngleSlider" HorizontalAlignment="Left" Margin="125,357,0,0" VerticalAlignment="Top" Width="120" Minimum="-360" Maximum="360"/>
+        <Rectangle x:Name="Color1" HorizontalAlignment="Left" Height="55" Margin="125,225,0,0" Stroke="Black" VerticalAlignment="Top" Width="56" Fill="Black"/>
+        <Rectangle x:Name="Color2" HorizontalAlignment="Left" Height="55" Margin="186,225,0,0" Stroke="Black" VerticalAlignment="Top" Width="56" Fill="Black"/>
+        <Slider x:Name="R" HorizontalAlignment="Left" Margin="125,297,0,0" VerticalAlignment="Top" Width="120" Maximum="255"/>
+        <Slider x:Name="B" HorizontalAlignment="Left" Margin="125,343,0,0" VerticalAlignment="Top" Width="120" Maximum="255"/>
+        <Slider x:Name="G" HorizontalAlignment="Left" Margin="125,320,0,0" VerticalAlignment="Top" Width="120" Maximum="255"/>
+        <Slider x:Name="AngleSlider" HorizontalAlignment="Left" Margin="125,202,0,0" VerticalAlignment="Top" Width="120" Minimum="-360" Maximum="360"/>
+        <Button Content="Polygon" HorizontalAlignment="Left" Margin="125,380,0,0" VerticalAlignment="Top" Click="Button_Click_3"/>
 
     </Grid>
 </Window>

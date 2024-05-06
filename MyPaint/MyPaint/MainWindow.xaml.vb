@@ -29,6 +29,24 @@ Class MainWindow
                 DrawingCanvas.Children.Add(el)
             End If
         End If
+        If ShapeLabel.Content = "Polygon" Then
+            Dim r As New Polygon
+            Dim p As Point = Mouse.GetPosition(DrawingCanvas)
+            r.Fill = ColorRectangle1.Fill
+            r.Points.Add(p + New Point(0 * WidthSlider.Value, -3 * WidthSlider.Value))
+            r.Points.Add(p + New Point(3 * WidthSlider.Value, -3 * WidthSlider.Value))
+            r.Points.Add(p + New Point(-3 * WidthSlider.Value, 3 * WidthSlider.Value))
+            r.Points.Add(p + New Point(0 * WidthSlider.Value, 3 * WidthSlider.Value))
+            r.Points.Add(p + New Point(0 * WidthSlider.Value, 0 * WidthSlider.Value))
+            r.Points.Add(p + New Point(-6 * WidthSlider.Value, 0 * WidthSlider.Value))
+            r.Points.Add(p + New Point(-6 * WidthSlider.Value, 6 * WidthSlider.Value))
+            r.Points.Add(p + New Point(6 * WidthSlider.Value, -6 * WidthSlider.Value))
+            r.Points.Add(p + New Point(6 * WidthSlider.Value, 0 * WidthSlider.Value))
+            r.Points.Add(p + New Point(0 * WidthSlider.Value, 0 * WidthSlider.Value))
+            If e.LeftButton = MouseButtonState.Pressed Then
+                DrawingCanvas.Children.Add(r)
+            End If
+        End If
     End Sub
     Private Sub ColorRectangle2_MouseLeftButtonDown(sender As Object, e As MouseButtonEventArgs) Handles ColorRectangle2.MouseLeftButtonDown, ColorRectangle3.MouseLeftButtonDown, ColorRectangle4.MouseLeftButtonDown, ColorRectangle5.MouseLeftButtonDown
         ColorRectangle1.Fill = sender.fill
@@ -96,5 +114,8 @@ Class MainWindow
     End Sub
     Private Sub AngleSlider_ValueChanged(sender As Object, e As RoutedPropertyChangedEventArgs(Of Double)) Handles AngleSlider.ValueChanged
         ColorRectangle1.Fill = New LinearGradientBrush(grad1, grad2, AngleSlider.Value)
+    End Sub
+    Private Sub Button_Click_3(sender As Object, e As RoutedEventArgs)
+        ShapeLabel.Content = sender.content
     End Sub
 End Class
