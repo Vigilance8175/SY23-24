@@ -8,6 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Mustang.PNG" />
+    <None Remove="Puppy.PNG" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Import Include="System.Windows" />
     <Import Include="System.Windows.Controls" />
     <Import Include="System.Windows.Data" />
@@ -17,6 +22,11 @@
     <Import Include="System.Windows.Media.Imaging" />
     <Import Include="System.Windows.Navigation" />
     <Import Include="System.Windows.Shapes" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Mustang.PNG" />
+    <Resource Include="Puppy.PNG" />
   </ItemGroup>
 
 </Project>

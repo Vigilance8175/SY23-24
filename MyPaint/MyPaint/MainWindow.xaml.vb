@@ -33,18 +33,44 @@ Class MainWindow
             Dim r As New Polygon
             Dim p As Point = Mouse.GetPosition(DrawingCanvas)
             r.Fill = ColorRectangle1.Fill
-            r.Points.Add(p + New Point(0 * WidthSlider.Value, -3 * WidthSlider.Value))
-            r.Points.Add(p + New Point(3 * WidthSlider.Value, -3 * WidthSlider.Value))
-            r.Points.Add(p + New Point(-3 * WidthSlider.Value, 3 * WidthSlider.Value))
-            r.Points.Add(p + New Point(0 * WidthSlider.Value, 3 * WidthSlider.Value))
-            r.Points.Add(p + New Point(0 * WidthSlider.Value, 0 * WidthSlider.Value))
-            r.Points.Add(p + New Point(-6 * WidthSlider.Value, 0 * WidthSlider.Value))
-            r.Points.Add(p + New Point(-6 * WidthSlider.Value, 6 * WidthSlider.Value))
-            r.Points.Add(p + New Point(6 * WidthSlider.Value, -6 * WidthSlider.Value))
-            r.Points.Add(p + New Point(6 * WidthSlider.Value, 0 * WidthSlider.Value))
-            r.Points.Add(p + New Point(0 * WidthSlider.Value, 0 * WidthSlider.Value))
+            r.Points.Add(p + New Point(0 * WidthSlider.Value, -3 * HeightSlider.Value))
+            r.Points.Add(p + New Point(-3 * WidthSlider.Value, -3 * HeightSlider.Value))
+            r.Points.Add(p + New Point(3 * WidthSlider.Value, 3 * HeightSlider.Value))
+            r.Points.Add(p + New Point(0 * WidthSlider.Value, 3 * HeightSlider.Value))
+            r.Points.Add(p + New Point(0 * WidthSlider.Value, 0 * HeightSlider.Value))
+            r.Points.Add(p + New Point(6 * WidthSlider.Value, 0 * HeightSlider.Value))
+            r.Points.Add(p + New Point(6 * WidthSlider.Value, 6 * HeightSlider.Value))
+            r.Points.Add(p + New Point(-6 * WidthSlider.Value, -6 * HeightSlider.Value))
+            r.Points.Add(p + New Point(-6 * WidthSlider.Value, 0 * HeightSlider.Value))
+            r.Points.Add(p + New Point(0 * WidthSlider.Value, 0 * HeightSlider.Value))
             If e.LeftButton = MouseButtonState.Pressed Then
                 DrawingCanvas.Children.Add(r)
+            End If
+        End If
+        If ShapeLabel.Content = "Puppy" Then
+            Dim myImageBrush As New ImageBrush(Puppy.Source)
+            Dim myCanvas As New Canvas
+            myCanvas.Width = 10 * WidthSlider.Value
+            myCanvas.Height = 10 * HeightSlider.Value
+            myCanvas.Background = myImageBrush
+            Dim p As Point = Mouse.GetPosition(DrawingCanvas)
+            Canvas.SetLeft(myCanvas, p.X)
+            Canvas.SetTop(myCanvas, p.Y)
+            If e.LeftButton = MouseButtonState.Pressed Then
+                DrawingCanvas.Children.Add(myCanvas)
+            End If
+        End If
+        If ShapeLabel.Content = "Mustang" Then
+            Dim myImageBrush As New ImageBrush(Mustang.Source)
+            Dim myCanvas As New Canvas
+            myCanvas.Width = 10 * WidthSlider.Value
+            myCanvas.Height = 10 * HeightSlider.Value
+            myCanvas.Background = myImageBrush
+            Dim p As Point = Mouse.GetPosition(DrawingCanvas)
+            Canvas.SetLeft(myCanvas, p.X)
+            Canvas.SetTop(myCanvas, p.Y)
+            If e.LeftButton = MouseButtonState.Pressed Then
+                DrawingCanvas.Children.Add(myCanvas)
             End If
         End If
     End Sub
@@ -117,5 +143,11 @@ Class MainWindow
     End Sub
     Private Sub Button_Click_3(sender As Object, e As RoutedEventArgs)
         ShapeLabel.Content = sender.content
+    End Sub
+    Private Sub btn5_Click(sender As Object, e As RoutedEventArgs) Handles btn5.Click
+        ShapeLabel.Content = "Puppy"
+    End Sub
+    Private Sub MustangPB_Click(sender As Object, e As RoutedEventArgs) Handles MustangPB.Click
+        ShapeLabel.Content = "Mustang"
     End Sub
 End Class
